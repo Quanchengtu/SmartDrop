@@ -1,3 +1,7 @@
+# =============================
+# ✅ Flutter 專案 .gitignore 推薦版本
+# =============================
+
 # Miscellaneous
 *.class
 *.log
@@ -18,10 +22,8 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code
+.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -33,13 +35,30 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Android build
+/android/app/debug
+/android/app/profile
+/android/app/release
+
 # Symbolication related
 app.*.symbols
 
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# ✅ 加入這些避免大型檔案被加入
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*.tmp
+*.log
+*.apk
+*.ipa
+
+# ✅ 排除手動備份資料夾
+backups/
+exports/
+
